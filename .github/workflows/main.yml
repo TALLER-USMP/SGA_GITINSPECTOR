@@ -27,6 +27,10 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y git
         
+    - name: Clone SGA_BACKEND repository
+      run: |
+        git clone https://github.com/TALLER-USMP/SGA_BACKEND.git
+        
     - name: Generate Reports using local GitInspector
       run: |
         # Usar el GitInspector local que ya funciona
